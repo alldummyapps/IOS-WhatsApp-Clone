@@ -1,0 +1,918 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		267F8471FAC82E08EAE4E305 /* Pods_MyIOSWhatsappCloneChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B6BE5C87974DEA1EC1DEB4 /* Pods_MyIOSWhatsappCloneChatUITests.framework */; };
+		3E66F5A11853F5393FA7615C /* Pods_MyIOSWhatsappCloneChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD35B43E52C740B92AE58239 /* Pods_MyIOSWhatsappCloneChatTests.framework */; };
+		52ABE82C241DD9DA494E631B /* Pods_MyIOSWhatsappCloneChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CD15F8BB2E0FE90E847F4F1 /* Pods_MyIOSWhatsappCloneChat.framework */; };
+		7205593F22F83E7300759950 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7205593E22F83E7300759950 /* AuthViewController.swift */; };
+		7205C82323046BEA00765654 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7205C82223046BEA00765654 /* StorageService.swift */; };
+		7205C8252305517A00765654 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7205C8242305517A00765654 /* PostService.swift */; };
+		72149D2022FB181600CAF43D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72149D1F22FB181600CAF43D /* RegisterViewController.swift */; };
+		722C37B522F8342B00E71174 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722C37B422F8342B00E71174 /* AppDelegate.swift */; };
+		722C37BA22F8342B00E71174 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 722C37B822F8342B00E71174 /* Main.storyboard */; };
+		722C37BC22F8342D00E71174 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 722C37BB22F8342D00E71174 /* Assets.xcassets */; };
+		722C37BF22F8342D00E71174 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 722C37BD22F8342D00E71174 /* LaunchScreen.storyboard */; };
+		722C37CA22F8342D00E71174 /* MyIOSWhatsappCloneChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722C37C922F8342D00E71174 /* MyIOSWhatsappCloneChatTests.swift */; };
+		722C37D522F8342D00E71174 /* MyIOSWhatsappCloneChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722C37D422F8342D00E71174 /* MyIOSWhatsappCloneChatUITests.swift */; };
+		722C37E322F834A400E71174 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 722C37E222F834A300E71174 /* GoogleService-Info.plist */; };
+		724F622D23005DDB00237A88 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F622C23005DDB00237A88 /* Constants.swift */; };
+		7251EF112304365700DEE336 /* UserSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7251EF102304365700DEE336 /* UserSettingsViewController.swift */; };
+		7255B78C22FEB8C30089FBCD /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7255B78B22FEB8C30089FBCD /* Utilities.swift */; };
+		726A18F323096E62008E49AD /* FindContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A18F223096E62008E49AD /* FindContactsTableViewController.swift */; };
+		726A18F523096EEF008E49AD /* FindContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A18F423096EEF008E49AD /* FindContactCell.swift */; };
+		726A18F9230AA2EC008E49AD /* RequestsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A18F8230AA2EC008E49AD /* RequestsTableViewController.swift */; };
+		726A18FB230AA2FC008E49AD /* RequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A18FA230AA2FC008E49AD /* RequestTableViewCell.swift */; };
+		726A1902230C4628008E49AD /* ConversationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A1901230C4628008E49AD /* ConversationsTableViewController.swift */; };
+		726A1904230C49A3008E49AD /* ConversationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A1903230C49A3008E49AD /* ConversationsTableViewCell.swift */; };
+		726A1907230DB131008E49AD /* ContactsListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A1906230DB131008E49AD /* ContactsListTVC.swift */; };
+		726A1909230DB1B8008E49AD /* ContactsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A1908230DB1B8008E49AD /* ContactsCell.swift */; };
+		726A190B230EE736008E49AD /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A190A230EE736008E49AD /* MessageCell.swift */; };
+		72BDE1F5230EF6660029BE31 /* SenderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BDE1F4230EF6660029BE31 /* SenderCell.swift */; };
+		72BDE2082312EC620029BE31 /* GroupsReceiverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BDE2072312EC620029BE31 /* GroupsReceiverCell.swift */; };
+		72BDE20A2312EC700029BE31 /* GroupsSenderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BDE2092312EC700029BE31 /* GroupsSenderCell.swift */; };
+		72BDE20F231542020029BE31 /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BDE20E231542020029BE31 /* GroupsVC.swift */; };
+		72BDE211231575EF0029BE31 /* GroupsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BDE210231575EF0029BE31 /* GroupsTVC.swift */; };
+		72D197962301C26600C18504 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D197952301C26600C18504 /* KeyboardLayoutConstraint.swift */; };
+		72D197D423030F5B00C18504 /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D197D323030F5B00C18504 /* MessagesTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		722C37C622F8342D00E71174 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 722C37A922F8342B00E71174 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 722C37B022F8342B00E71174;
+			remoteInfo = MyIOSWhatsappCloneChat;
+		};
+		722C37D122F8342D00E71174 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 722C37A922F8342B00E71174 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 722C37B022F8342B00E71174;
+			remoteInfo = MyIOSWhatsappCloneChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A0C5D0B284642AE35D55AC7 /* Pods-MyIOSWhatsappCloneChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyIOSWhatsappCloneChatTests.release.xcconfig"; path = "Target Support Files/Pods-MyIOSWhatsappCloneChatTests/Pods-MyIOSWhatsappCloneChatTests.release.xcconfig"; sourceTree = "<group>"; };
+		34B6BE5C87974DEA1EC1DEB4 /* Pods_MyIOSWhatsappCloneChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyIOSWhatsappCloneChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		395E978FDEE46C6226704238 /* Pods-MyIOSWhatsappCloneChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyIOSWhatsappCloneChatTests.debug.xcconfig"; path = "Target Support Files/Pods-MyIOSWhatsappCloneChatTests/Pods-MyIOSWhatsappCloneChatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6CD15F8BB2E0FE90E847F4F1 /* Pods_MyIOSWhatsappCloneChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyIOSWhatsappCloneChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7205593E22F83E7300759950 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		7205594022F9562C00759950 /* MyIOSWhatsappCloneChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyIOSWhatsappCloneChat.entitlements; sourceTree = "<group>"; };
+		7205C82223046BEA00765654 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		7205C8242305517A00765654 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		72149D1F22FB181600CAF43D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		722C37B122F8342B00E71174 /* MyIOSWhatsappCloneChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyIOSWhatsappCloneChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		722C37B422F8342B00E71174 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		722C37B922F8342B00E71174 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		722C37BB22F8342D00E71174 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		722C37BE22F8342D00E71174 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		722C37C022F8342D00E71174 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		722C37C522F8342D00E71174 /* MyIOSWhatsappCloneChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyIOSWhatsappCloneChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		722C37C922F8342D00E71174 /* MyIOSWhatsappCloneChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyIOSWhatsappCloneChatTests.swift; sourceTree = "<group>"; };
+		722C37CB22F8342D00E71174 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		722C37D022F8342D00E71174 /* MyIOSWhatsappCloneChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyIOSWhatsappCloneChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		722C37D422F8342D00E71174 /* MyIOSWhatsappCloneChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyIOSWhatsappCloneChatUITests.swift; sourceTree = "<group>"; };
+		722C37D622F8342D00E71174 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		722C37E222F834A300E71174 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		724F622C23005DDB00237A88 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7251EF102304365700DEE336 /* UserSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsViewController.swift; sourceTree = "<group>"; };
+		7255B78B22FEB8C30089FBCD /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		726A18F223096E62008E49AD /* FindContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindContactsTableViewController.swift; sourceTree = "<group>"; };
+		726A18F423096EEF008E49AD /* FindContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindContactCell.swift; sourceTree = "<group>"; };
+		726A18F8230AA2EC008E49AD /* RequestsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsTableViewController.swift; sourceTree = "<group>"; };
+		726A18FA230AA2FC008E49AD /* RequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableViewCell.swift; sourceTree = "<group>"; };
+		726A1901230C4628008E49AD /* ConversationsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsTableViewController.swift; sourceTree = "<group>"; };
+		726A1903230C49A3008E49AD /* ConversationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsTableViewCell.swift; sourceTree = "<group>"; };
+		726A1906230DB131008E49AD /* ContactsListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListTVC.swift; sourceTree = "<group>"; };
+		726A1908230DB1B8008E49AD /* ContactsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsCell.swift; sourceTree = "<group>"; };
+		726A190A230EE736008E49AD /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		72BDE1F4230EF6660029BE31 /* SenderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderCell.swift; sourceTree = "<group>"; };
+		72BDE2072312EC620029BE31 /* GroupsReceiverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsReceiverCell.swift; sourceTree = "<group>"; };
+		72BDE2092312EC700029BE31 /* GroupsSenderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsSenderCell.swift; sourceTree = "<group>"; };
+		72BDE20E231542020029BE31 /* GroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsVC.swift; sourceTree = "<group>"; };
+		72BDE210231575EF0029BE31 /* GroupsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTVC.swift; sourceTree = "<group>"; };
+		72D197952301C26600C18504 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
+		72D197D323030F5B00C18504 /* MessagesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
+		9335A95E31333864FF3F0D92 /* Pods-MyIOSWhatsappCloneChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyIOSWhatsappCloneChat.debug.xcconfig"; path = "Target Support Files/Pods-MyIOSWhatsappCloneChat/Pods-MyIOSWhatsappCloneChat.debug.xcconfig"; sourceTree = "<group>"; };
+		AD35B43E52C740B92AE58239 /* Pods_MyIOSWhatsappCloneChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyIOSWhatsappCloneChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4E368D1F9FA4E2316F8941C /* Pods-MyIOSWhatsappCloneChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyIOSWhatsappCloneChatUITests.debug.xcconfig"; path = "Target Support Files/Pods-MyIOSWhatsappCloneChatUITests/Pods-MyIOSWhatsappCloneChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D7243ACAFEAF472A69923577 /* Pods-MyIOSWhatsappCloneChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyIOSWhatsappCloneChat.release.xcconfig"; path = "Target Support Files/Pods-MyIOSWhatsappCloneChat/Pods-MyIOSWhatsappCloneChat.release.xcconfig"; sourceTree = "<group>"; };
+		E1A88092DB6AF5FB45361665 /* Pods-MyIOSWhatsappCloneChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyIOSWhatsappCloneChatUITests.release.xcconfig"; path = "Target Support Files/Pods-MyIOSWhatsappCloneChatUITests/Pods-MyIOSWhatsappCloneChatUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		722C37AE22F8342B00E71174 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52ABE82C241DD9DA494E631B /* Pods_MyIOSWhatsappCloneChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		722C37C222F8342D00E71174 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E66F5A11853F5393FA7615C /* Pods_MyIOSWhatsappCloneChatTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		722C37CD22F8342D00E71174 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				267F8471FAC82E08EAE4E305 /* Pods_MyIOSWhatsappCloneChatUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		302EC475DD05CBFFA8E48889 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CD15F8BB2E0FE90E847F4F1 /* Pods_MyIOSWhatsappCloneChat.framework */,
+				AD35B43E52C740B92AE58239 /* Pods_MyIOSWhatsappCloneChatTests.framework */,
+				34B6BE5C87974DEA1EC1DEB4 /* Pods_MyIOSWhatsappCloneChatUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		722C37A822F8342B00E71174 = {
+			isa = PBXGroup;
+			children = (
+				722C37B322F8342B00E71174 /* MyIOSWhatsappCloneChat */,
+				722C37C822F8342D00E71174 /* MyIOSWhatsappCloneChatTests */,
+				722C37D322F8342D00E71174 /* MyIOSWhatsappCloneChatUITests */,
+				722C37B222F8342B00E71174 /* Products */,
+				E4EA0B75D645ECB4CFF4B20C /* Pods */,
+				302EC475DD05CBFFA8E48889 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		722C37B222F8342B00E71174 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				722C37B122F8342B00E71174 /* MyIOSWhatsappCloneChat.app */,
+				722C37C522F8342D00E71174 /* MyIOSWhatsappCloneChatTests.xctest */,
+				722C37D022F8342D00E71174 /* MyIOSWhatsappCloneChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		722C37B322F8342B00E71174 /* MyIOSWhatsappCloneChat */ = {
+			isa = PBXGroup;
+			children = (
+				72BDE1F62312E6860029BE31 /* groups */,
+				726A1905230DB10A008E49AD /* contactsList */,
+				726A18FC230BE711008E49AD /* conversations */,
+				726A18F7230AA2BF008E49AD /* requests */,
+				726A18F623096EF6008E49AD /* findContact */,
+				726A18F123096C45008E49AD /* settings */,
+				7276EF4423032666006DA39D /* UtilAndModels */,
+				7255B78A22FEB67B0089FBCD /* loginRegister */,
+				7205594022F9562C00759950 /* MyIOSWhatsappCloneChat.entitlements */,
+				722C37B422F8342B00E71174 /* AppDelegate.swift */,
+				722C37B822F8342B00E71174 /* Main.storyboard */,
+				722C37BB22F8342D00E71174 /* Assets.xcassets */,
+				722C37BD22F8342D00E71174 /* LaunchScreen.storyboard */,
+				722C37E222F834A300E71174 /* GoogleService-Info.plist */,
+				722C37C022F8342D00E71174 /* Info.plist */,
+			);
+			path = MyIOSWhatsappCloneChat;
+			sourceTree = "<group>";
+		};
+		722C37C822F8342D00E71174 /* MyIOSWhatsappCloneChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				722C37C922F8342D00E71174 /* MyIOSWhatsappCloneChatTests.swift */,
+				722C37CB22F8342D00E71174 /* Info.plist */,
+			);
+			path = MyIOSWhatsappCloneChatTests;
+			sourceTree = "<group>";
+		};
+		722C37D322F8342D00E71174 /* MyIOSWhatsappCloneChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				722C37D422F8342D00E71174 /* MyIOSWhatsappCloneChatUITests.swift */,
+				722C37D622F8342D00E71174 /* Info.plist */,
+			);
+			path = MyIOSWhatsappCloneChatUITests;
+			sourceTree = "<group>";
+		};
+		7255B78A22FEB67B0089FBCD /* loginRegister */ = {
+			isa = PBXGroup;
+			children = (
+				7205593E22F83E7300759950 /* AuthViewController.swift */,
+				72149D1F22FB181600CAF43D /* RegisterViewController.swift */,
+			);
+			path = loginRegister;
+			sourceTree = "<group>";
+		};
+		726A18F123096C45008E49AD /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				7251EF102304365700DEE336 /* UserSettingsViewController.swift */,
+			);
+			path = settings;
+			sourceTree = "<group>";
+		};
+		726A18F623096EF6008E49AD /* findContact */ = {
+			isa = PBXGroup;
+			children = (
+				726A18F223096E62008E49AD /* FindContactsTableViewController.swift */,
+				726A18F423096EEF008E49AD /* FindContactCell.swift */,
+			);
+			path = findContact;
+			sourceTree = "<group>";
+		};
+		726A18F7230AA2BF008E49AD /* requests */ = {
+			isa = PBXGroup;
+			children = (
+				726A18F8230AA2EC008E49AD /* RequestsTableViewController.swift */,
+				726A18FA230AA2FC008E49AD /* RequestTableViewCell.swift */,
+			);
+			path = requests;
+			sourceTree = "<group>";
+		};
+		726A18FC230BE711008E49AD /* conversations */ = {
+			isa = PBXGroup;
+			children = (
+				72BDE20B2312EDDD0029BE31 /* messages */,
+				726A1901230C4628008E49AD /* ConversationsTableViewController.swift */,
+				726A1903230C49A3008E49AD /* ConversationsTableViewCell.swift */,
+			);
+			path = conversations;
+			sourceTree = "<group>";
+		};
+		726A1905230DB10A008E49AD /* contactsList */ = {
+			isa = PBXGroup;
+			children = (
+				726A1906230DB131008E49AD /* ContactsListTVC.swift */,
+				726A1908230DB1B8008E49AD /* ContactsCell.swift */,
+			);
+			path = contactsList;
+			sourceTree = "<group>";
+		};
+		7276EF4423032666006DA39D /* UtilAndModels */ = {
+			isa = PBXGroup;
+			children = (
+				7205C82223046BEA00765654 /* StorageService.swift */,
+				724F622C23005DDB00237A88 /* Constants.swift */,
+				72D197952301C26600C18504 /* KeyboardLayoutConstraint.swift */,
+				7255B78B22FEB8C30089FBCD /* Utilities.swift */,
+				7205C8242305517A00765654 /* PostService.swift */,
+			);
+			path = UtilAndModels;
+			sourceTree = "<group>";
+		};
+		72BDE1F62312E6860029BE31 /* groups */ = {
+			isa = PBXGroup;
+			children = (
+				72BDE2072312EC620029BE31 /* GroupsReceiverCell.swift */,
+				72BDE2092312EC700029BE31 /* GroupsSenderCell.swift */,
+				72BDE20E231542020029BE31 /* GroupsVC.swift */,
+				72BDE210231575EF0029BE31 /* GroupsTVC.swift */,
+			);
+			path = groups;
+			sourceTree = "<group>";
+		};
+		72BDE20B2312EDDD0029BE31 /* messages */ = {
+			isa = PBXGroup;
+			children = (
+				72BDE1F4230EF6660029BE31 /* SenderCell.swift */,
+				726A190A230EE736008E49AD /* MessageCell.swift */,
+				72D197D323030F5B00C18504 /* MessagesTableViewController.swift */,
+			);
+			path = messages;
+			sourceTree = "<group>";
+		};
+		E4EA0B75D645ECB4CFF4B20C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9335A95E31333864FF3F0D92 /* Pods-MyIOSWhatsappCloneChat.debug.xcconfig */,
+				D7243ACAFEAF472A69923577 /* Pods-MyIOSWhatsappCloneChat.release.xcconfig */,
+				395E978FDEE46C6226704238 /* Pods-MyIOSWhatsappCloneChatTests.debug.xcconfig */,
+				2A0C5D0B284642AE35D55AC7 /* Pods-MyIOSWhatsappCloneChatTests.release.xcconfig */,
+				C4E368D1F9FA4E2316F8941C /* Pods-MyIOSWhatsappCloneChatUITests.debug.xcconfig */,
+				E1A88092DB6AF5FB45361665 /* Pods-MyIOSWhatsappCloneChatUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		722C37B022F8342B00E71174 /* MyIOSWhatsappCloneChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 722C37D922F8342D00E71174 /* Build configuration list for PBXNativeTarget "MyIOSWhatsappCloneChat" */;
+			buildPhases = (
+				85824417ED0694ECEC095DE6 /* [CP] Check Pods Manifest.lock */,
+				722C37AD22F8342B00E71174 /* Sources */,
+				722C37AE22F8342B00E71174 /* Frameworks */,
+				722C37AF22F8342B00E71174 /* Resources */,
+				D88AC0CC29556B8E327E8F79 /* [CP] Embed Pods Frameworks */,
+				1D480B64A22452611756EE10 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyIOSWhatsappCloneChat;
+			productName = MyIOSWhatsappCloneChat;
+			productReference = 722C37B122F8342B00E71174 /* MyIOSWhatsappCloneChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		722C37C422F8342D00E71174 /* MyIOSWhatsappCloneChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 722C37DC22F8342D00E71174 /* Build configuration list for PBXNativeTarget "MyIOSWhatsappCloneChatTests" */;
+			buildPhases = (
+				B181D51C85BEF5B5CD2F3A8A /* [CP] Check Pods Manifest.lock */,
+				722C37C122F8342D00E71174 /* Sources */,
+				722C37C222F8342D00E71174 /* Frameworks */,
+				722C37C322F8342D00E71174 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				722C37C722F8342D00E71174 /* PBXTargetDependency */,
+			);
+			name = MyIOSWhatsappCloneChatTests;
+			productName = MyIOSWhatsappCloneChatTests;
+			productReference = 722C37C522F8342D00E71174 /* MyIOSWhatsappCloneChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		722C37CF22F8342D00E71174 /* MyIOSWhatsappCloneChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 722C37DF22F8342D00E71174 /* Build configuration list for PBXNativeTarget "MyIOSWhatsappCloneChatUITests" */;
+			buildPhases = (
+				70E8EA5409DD37AAA6D1B1B2 /* [CP] Check Pods Manifest.lock */,
+				722C37CC22F8342D00E71174 /* Sources */,
+				722C37CD22F8342D00E71174 /* Frameworks */,
+				722C37CE22F8342D00E71174 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				722C37D222F8342D00E71174 /* PBXTargetDependency */,
+			);
+			name = MyIOSWhatsappCloneChatUITests;
+			productName = MyIOSWhatsappCloneChatUITests;
+			productReference = 722C37D022F8342D00E71174 /* MyIOSWhatsappCloneChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		722C37A922F8342B00E71174 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = yonsProject;
+				TargetAttributes = {
+					722C37B022F8342B00E71174 = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					722C37C422F8342D00E71174 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 722C37B022F8342B00E71174;
+					};
+					722C37CF22F8342D00E71174 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 722C37B022F8342B00E71174;
+					};
+				};
+			};
+			buildConfigurationList = 722C37AC22F8342B00E71174 /* Build configuration list for PBXProject "MyIOSWhatsappCloneChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 722C37A822F8342B00E71174;
+			productRefGroup = 722C37B222F8342B00E71174 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				722C37B022F8342B00E71174 /* MyIOSWhatsappCloneChat */,
+				722C37C422F8342D00E71174 /* MyIOSWhatsappCloneChatTests */,
+				722C37CF22F8342D00E71174 /* MyIOSWhatsappCloneChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		722C37AF22F8342B00E71174 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				722C37BF22F8342D00E71174 /* LaunchScreen.storyboard in Resources */,
+				722C37E322F834A400E71174 /* GoogleService-Info.plist in Resources */,
+				722C37BC22F8342D00E71174 /* Assets.xcassets in Resources */,
+				722C37BA22F8342B00E71174 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		722C37C322F8342D00E71174 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		722C37CE22F8342D00E71174 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D480B64A22452611756EE10 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyIOSWhatsappCloneChat/Pods-MyIOSWhatsappCloneChat-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyIOSWhatsappCloneChat/Pods-MyIOSWhatsappCloneChat-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyIOSWhatsappCloneChat/Pods-MyIOSWhatsappCloneChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70E8EA5409DD37AAA6D1B1B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyIOSWhatsappCloneChatUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85824417ED0694ECEC095DE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyIOSWhatsappCloneChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B181D51C85BEF5B5CD2F3A8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyIOSWhatsappCloneChatTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D88AC0CC29556B8E327E8F79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyIOSWhatsappCloneChat/Pods-MyIOSWhatsappCloneChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyIOSWhatsappCloneChat/Pods-MyIOSWhatsappCloneChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyIOSWhatsappCloneChat/Pods-MyIOSWhatsappCloneChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		722C37AD22F8342B00E71174 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				726A18F523096EEF008E49AD /* FindContactCell.swift in Sources */,
+				72D197D423030F5B00C18504 /* MessagesTableViewController.swift in Sources */,
+				7205593F22F83E7300759950 /* AuthViewController.swift in Sources */,
+				722C37B522F8342B00E71174 /* AppDelegate.swift in Sources */,
+				7251EF112304365700DEE336 /* UserSettingsViewController.swift in Sources */,
+				726A1902230C4628008E49AD /* ConversationsTableViewController.swift in Sources */,
+				72BDE20F231542020029BE31 /* GroupsVC.swift in Sources */,
+				726A1907230DB131008E49AD /* ContactsListTVC.swift in Sources */,
+				72BDE20A2312EC700029BE31 /* GroupsSenderCell.swift in Sources */,
+				7205C8252305517A00765654 /* PostService.swift in Sources */,
+				7205C82323046BEA00765654 /* StorageService.swift in Sources */,
+				7255B78C22FEB8C30089FBCD /* Utilities.swift in Sources */,
+				726A190B230EE736008E49AD /* MessageCell.swift in Sources */,
+				726A18F9230AA2EC008E49AD /* RequestsTableViewController.swift in Sources */,
+				72D197962301C26600C18504 /* KeyboardLayoutConstraint.swift in Sources */,
+				72BDE211231575EF0029BE31 /* GroupsTVC.swift in Sources */,
+				726A18FB230AA2FC008E49AD /* RequestTableViewCell.swift in Sources */,
+				72149D2022FB181600CAF43D /* RegisterViewController.swift in Sources */,
+				726A1909230DB1B8008E49AD /* ContactsCell.swift in Sources */,
+				72BDE1F5230EF6660029BE31 /* SenderCell.swift in Sources */,
+				724F622D23005DDB00237A88 /* Constants.swift in Sources */,
+				726A18F323096E62008E49AD /* FindContactsTableViewController.swift in Sources */,
+				72BDE2082312EC620029BE31 /* GroupsReceiverCell.swift in Sources */,
+				726A1904230C49A3008E49AD /* ConversationsTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		722C37C122F8342D00E71174 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				722C37CA22F8342D00E71174 /* MyIOSWhatsappCloneChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		722C37CC22F8342D00E71174 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				722C37D522F8342D00E71174 /* MyIOSWhatsappCloneChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		722C37C722F8342D00E71174 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 722C37B022F8342B00E71174 /* MyIOSWhatsappCloneChat */;
+			targetProxy = 722C37C622F8342D00E71174 /* PBXContainerItemProxy */;
+		};
+		722C37D222F8342D00E71174 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 722C37B022F8342B00E71174 /* MyIOSWhatsappCloneChat */;
+			targetProxy = 722C37D122F8342D00E71174 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		722C37B822F8342B00E71174 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				722C37B922F8342B00E71174 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		722C37BD22F8342D00E71174 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				722C37BE22F8342D00E71174 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		722C37D722F8342D00E71174 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		722C37D822F8342D00E71174 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		722C37DA22F8342D00E71174 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9335A95E31333864FF3F0D92 /* Pods-MyIOSWhatsappCloneChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyIOSWhatsappCloneChat/MyIOSWhatsappCloneChat.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MyIOSWhatsappCloneChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.yonatan.MyIOSWhatsappCloneChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		722C37DB22F8342D00E71174 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7243ACAFEAF472A69923577 /* Pods-MyIOSWhatsappCloneChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyIOSWhatsappCloneChat/MyIOSWhatsappCloneChat.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MyIOSWhatsappCloneChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.yonatan.MyIOSWhatsappCloneChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		722C37DD22F8342D00E71174 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 395E978FDEE46C6226704238 /* Pods-MyIOSWhatsappCloneChatTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyIOSWhatsappCloneChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.yonatan.MyIOSWhatsappCloneChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyIOSWhatsappCloneChat.app/MyIOSWhatsappCloneChat";
+			};
+			name = Debug;
+		};
+		722C37DE22F8342D00E71174 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A0C5D0B284642AE35D55AC7 /* Pods-MyIOSWhatsappCloneChatTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyIOSWhatsappCloneChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.yonatan.MyIOSWhatsappCloneChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyIOSWhatsappCloneChat.app/MyIOSWhatsappCloneChat";
+			};
+			name = Release;
+		};
+		722C37E022F8342D00E71174 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4E368D1F9FA4E2316F8941C /* Pods-MyIOSWhatsappCloneChatUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyIOSWhatsappCloneChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.yonatan.MyIOSWhatsappCloneChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyIOSWhatsappCloneChat;
+			};
+			name = Debug;
+		};
+		722C37E122F8342D00E71174 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1A88092DB6AF5FB45361665 /* Pods-MyIOSWhatsappCloneChatUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyIOSWhatsappCloneChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.yonatan.MyIOSWhatsappCloneChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyIOSWhatsappCloneChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		722C37AC22F8342B00E71174 /* Build configuration list for PBXProject "MyIOSWhatsappCloneChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				722C37D722F8342D00E71174 /* Debug */,
+				722C37D822F8342D00E71174 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		722C37D922F8342D00E71174 /* Build configuration list for PBXNativeTarget "MyIOSWhatsappCloneChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				722C37DA22F8342D00E71174 /* Debug */,
+				722C37DB22F8342D00E71174 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		722C37DC22F8342D00E71174 /* Build configuration list for PBXNativeTarget "MyIOSWhatsappCloneChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				722C37DD22F8342D00E71174 /* Debug */,
+				722C37DE22F8342D00E71174 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		722C37DF22F8342D00E71174 /* Build configuration list for PBXNativeTarget "MyIOSWhatsappCloneChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				722C37E022F8342D00E71174 /* Debug */,
+				722C37E122F8342D00E71174 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 722C37A922F8342B00E71174 /* Project object */;
+}
